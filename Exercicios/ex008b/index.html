@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <style type="text/css">
+        mark {
+            background-color: grey;
+        }
+    </style><!--mudando a cor de todos os MARKs-->
+</head>
+<body>
+    <style type="text/css">
+       body{
+        background-color: green;
+        } 
+    </style>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <p>o comando <code>document.getElementById('Teste')</code> é escrito em linguagem javaScript.</p>
+    <pre>
+        <code>
+num = int(input('digite um número: '))
+if num % 2 == 0:
+    print(f'o numero {num} é par')
+else:
+    print(f'o numero {num} é ímpar')
+print('fim do programa')
+        </code>
+    </pre>
+
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+
+    <h2>Citações completas</h2>
+    <p>segundo Ed Tittle no seu livro <q>HTML, XTML e CSS para leigos</q>:</p>
+    <blockquote cite="https://www.amazon.com.br/HTML-XHTML-CSS-Para-Leigos-ebook/dp/B07H7QMGWQ">
+        As ferramentas de navegação(que estabelecem mecanismos e ferramentas padrão para se mover dentro de um site na web) fornecem formas de criação
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Laguage">HTML</abbr> e <abbr title="Cascate style Sheets">CSS</abbr>. Estou adorando!</p>
+
+    <h2>Texto invertido</h2>
+    <p> <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo> </p>
+
+</body>
+</html>
