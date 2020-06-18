@@ -117,7 +117,48 @@ section#corpo{
     display: block;
     width: 55%;
     float: left;
+    border-right: 1px solid #606060;/*largura | tipo de linha | cor da linha*/
+    border-left: 1px solid #606060;
+    padding-right: 10px;
+    padding-left: 5px;
 }
+
+article#noticia-principal h2{
+    font-size: 12px;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+header.cabecalho-artigo h1{
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 20pt;
+    color: #606060;
+
+}
+header.cabecalho-artigo h2{
+    font-size: 80px;
+    color: #cece;
+}
+header.cabecalho-artigo h3{
+
+}
+
+table.tabelaspec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: center;
+    margin-right: center;
+    padding: 10px;
+}
+
+.tabelaspec td{
+    border: 1px solid #606060;/*dashed - traçado*/
+    text-align: right;
+    vertical-align: middle;/*botton: ; | top*/
+}
+
 aside#lateral{
     display: block;
     width: 40%;
@@ -126,4 +167,9 @@ aside#lateral{
 
 footer#rodape{
     clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
 }
