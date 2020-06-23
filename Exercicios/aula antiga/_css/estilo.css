@@ -209,3 +209,10 @@ footer#rodape{
 footer#rodape p{
     text-align: center;
 }
+
+video{
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    margin: 0px auto;
+}
