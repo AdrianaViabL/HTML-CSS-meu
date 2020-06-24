@@ -2,27 +2,27 @@
 
 div#tv-radio{
     display: block;
-    width: 100%;
-    max-width: 900px;
-    height: 580px;
+    max-width: 700px;
+    height: 450px;
     margin: auto;
     background: url("../_imagens/radio-tv.png") no-repeat;
-    background-size: 100%;
+    background-size: 650px;
 }
 
 audio{
     display: block;
     position: relative;
-    left: 64%;
-    top: 84%;
-    width: 100%;
-    max-width: 300px;
+    left: 420px;
+    top: 340px;
+    max-height: 50px;
+    max-width: 200px;
+    background-color: none;
 }
 
 video{
     display: block;
     position: relative;
-    left:
-    top:;
-    width: 440px;
+    left:-129px;
+    top: 30px;
+    width: 330px;
 }

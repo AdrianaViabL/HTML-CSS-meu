@@ -42,33 +42,44 @@
 </hgroup>
 </header>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<form>
+    <fieldset id="usuario">
+        <legend>Identificação do Usuário</legend>
+        <p><label for="cnome">Nome: </label><input type="text" name="nome" id="cnome" size="20" maxlength="30" placeholder="Nome completo"></p>
+        <p><label for="csenha">Senha: </label><input type="password" name="senha" id="csenha" size="8" maxlength="8" placeholder="password"> </p>
+        <p><label for="cemail">E-mail: </label><input type="email" name="mail" id="cemail" size="20" maxlength="40"> </p>
+        <!--o LABEL altera a informação de forma semantica dentro do HTML-->
+        <fieldset><legend> Sexo:</legend>
+            <input type="radio" name="sexo" id="cmasc"> <label for="cmasc">Masculino </label><br><!--configurando para que quando clicado na escrita tambem aperte o botão correspondente-->
+            <input type="radio" name="sexo" id="cfem"> <label for="cfem">Feminino</label>
+        </fieldset>
+        <p><label for="cnasc">Data de Nascimento: </label><input type="date" name="nasc" id="cnasc"></p>
+    </fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+    <fieldset id="endereco">
+        <legend> Endereço do Usuário </legend>
+        <p><label>Logradouro: </label><input type="text" name="logr" id="clogr" size="13" maxlength="80" placeholder="Rua, av, trav ..."></p>
+        <p><label for="cnum">Número: </label><input type="number" name="num" id="cnum" min="0" max="999999"> </p>
+        <p>Estado: </p>
+        <p>Cidade: </p>
+    </fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+    <fieldset id="mensagem">
+        <legend> Mensagem do Usuário</legend>
+        <p>Grau de Urgência:</p>
+        <p>Mensagem:</p>
+    </fieldset>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
+    <fieldset id="pedido">
+        <legend> Quero um Google Glass </legend>
+        Gostaria de adquirir um Google Glass quando disponível
+        <p>Cor:</p>
+        <p>Quantidade:</p>
+        <p>Preço Total: R$</p>
+    </fieldset>
 
 [BOTÃO ENVIAR]
+</form>
 
 <footer id="rodape">
 <p>
