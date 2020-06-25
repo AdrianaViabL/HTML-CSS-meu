@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
     <title>Tudo sobre o Google Glass</title>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
 </head>
 
 <script src="_javascript/funcoes.js"></script>
+<script type="text/javascript">
+    function calc_total(){
+        var qtd = parseInt(document.getElementById('cqtd').value);
+        tot = qtd * 1500;
+        document.getElementById('ctot').value = tot;
+    }
+</script>
 
 <body>
 <div id="interface">
@@ -42,14 +50,14 @@
 </hgroup>
 </header>
 
-<form>
+<form method="post" action="mail@exemplo.com" oninput="calc_total();"><!--get - pesquisa a informação mostrando ela na URL(menos seguro)  post - envia informação da pesquisa através de pacotes de dados(mais seguro, mas não integra criptografia)-->
     <fieldset id="usuario">
         <legend>Identificação do Usuário</legend>
         <p><label for="cnome">Nome: </label><input type="text" name="nome" id="cnome" size="20" maxlength="30" placeholder="Nome completo"></p>
         <p><label for="csenha">Senha: </label><input type="password" name="senha" id="csenha" size="8" maxlength="8" placeholder="password"> </p>
         <p><label for="cemail">E-mail: </label><input type="email" name="mail" id="cemail" size="20" maxlength="40"> </p>
         <!--o LABEL altera a informação de forma semantica dentro do HTML-->
-        <fieldset><legend> Sexo:</legend>
+        <fieldset id="sexo"><legend> Sexo:</legend>
             <input type="radio" name="sexo" id="cmasc"> <label for="cmasc">Masculino </label><br><!--configurando para que quando clicado na escrita tambem aperte o botão correspondente-->
             <input type="radio" name="sexo" id="cfem"> <label for="cfem">Feminino</label>
         </fieldset>
@@ -58,27 +66,56 @@
 
     <fieldset id="endereco">
         <legend> Endereço do Usuário </legend>
-        <p><label>Logradouro: </label><input type="text" name="logr" id="clogr" size="13" maxlength="80" placeholder="Rua, av, trav ..."></p>
-        <p><label for="cnum">Número: </label><input type="number" name="num" id="cnum" min="0" max="999999"> </p>
-        <p>Estado: </p>
-        <p>Cidade: </p>
+        <p><label for="clogr">Logradouro: </label><input type="text" name="logr" id="clogr" size="13" maxlength="80" placeholder="Rua, av, trav ..."></p>
+        <p><label for="cnum">Número: </label><input type="number" name="num" id="cnum" min="0" max="999999" maxlength="7">
+        </p>
+        <p><label for="cest">Estado: </label>
+            <select name="test" id="cest">
+                <optgroup label="Região sudeste">
+                    <option value="RJ">Rio de Janeiro</option><!--VALUE - valor que será retornado para o banco de dados-->
+                    <option value="SP" selected>São Paulo</option><!--selected - para colocar como atributo principal nas opções-->
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+        <p><label for="ccid">Cidade: </label>
+            <input type="text" name="tcid" id="ccid" maxlength="40" size="20" placeholder="Sua cidade" list="cidades">
+            <datalist id="cidades">
+                <option value="Rio de janeiro"></option>
+                <option value="nova iguaçú"></option>
+                <option value="Niterói"></option>
+                <option value="Belford Roxo"></option>
+            </datalist>
+        </p>
     </fieldset>
 
     <fieldset id="mensagem">
         <legend> Mensagem do Usuário</legend>
-        <p>Grau de Urgência:</p>
-        <p>Mensagem:</p>
+        <p><label for="curg">Grau de Urgência: </label>Min
+            <input type="range" name="turg" id="curg" min="0" max="12" step="2">Máx
+        </p>
+        <p><label for="cmsg">Mensagem: </label>
+            <textarea name="tmsg" id="cmsg" cols="35" rows="5" placeholder="deixe aqui sua mensagem"></textarea>
+        </p>
     </fieldset>
 
     <fieldset id="pedido">
         <legend> Quero um Google Glass </legend>
-        Gostaria de adquirir um Google Glass quando disponível
-        <p>Cor:</p>
-        <p>Quantidade:</p>
-        <p>Preço Total: R$</p>
+        <p><input type="checkbox" name="tped" id="cped" checked><label for="cped">
+            Gostaria de adquirir um Google Glass quando disponível
+        </label></p>
+        <p><label for="ccor">Cor: </label>
+            <input type="color" name="tcor" id="ccor" value="#"></p>
+        <p><label for="cqtd">Quantidade: </label><input type="number" name="tqtd" id="cqtd" min="0" max="5" value="0"></p>
+        <p><label for="ctot">Preço Total: R$</label><input type="text" name="ttot" id="ctot" placeholder="Total a pagar" readonly></p>
     </fieldset>
-
-[BOTÃO ENVIAR]
+ <!--<input type="submit" value="Enviar"> jeito com comando do input-->
+    <input align="center" type="image" name="tenviar" src="_imagens/botao-enviar.png">
 </form>
 
 <footer id="rodape">

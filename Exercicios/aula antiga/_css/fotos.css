@@ -7,6 +7,7 @@ ul#album-fotos{
     padding: 20px;
     overflow: hidden;
     list-style: none;
+    margin-bottom: 15px;
 }
 
 ul#album-fotos li{
@@ -17,26 +18,51 @@ ul#album-fotos li{
     border: 5px solid white;
     background-color: white;
     box-shadow: 1px 1px 2px grey;
+    background-position: 50% 50%;/*centralizando a imagem dentro do quadrado*/
+    background-size: 400px 400px;/*tamanho ORIGINAL da imagem*/
+    background-color: #ffffff;
+    -webkit-transition: all .4s ease-in;
 }
 ul#album-fotos li span{
     opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+/*para juntar todos os comandos em um lugar(de ajuste da imagem) tem que tirar o no-repeat*/
+ul#album-fotos li:hover {
+    -webkit-transform: scale(1.5);
+    background-position: 0px 0px;/*para ele nao mudar de posição*/
+    background-size: 200px 200px;
+}
+ul#album-fotos li:hover span{
+    opacity: 1;
 }
 
 ul#album-fotos li#foto01{
-    background: url('../_imagens/galeria-01.jpg') no-repeat;
+    background-image: url('../_imagens/galeria-01.jpg');
 }
+
 ul#album-fotos li#foto02{
-    background: url('../_imagens/galeria-02.jpg') no-repeat;
+    background-image: url('../_imagens/galeria-02.jpg');
+
 }
 ul#album-fotos li#foto03{
-    background: url('../_imagens/galeria-03.jpg') no-repeat;
+    background-image: url('../_imagens/galeria-03.jpg');
 }
+
 ul#album-fotos li#foto04{
-    background: url('../_imagens/galeria-04.jpg') no-repeat;
+    background-image: url('../_imagens/galeria-04.jpg');
 }
+
 ul#album-fotos li#foto05{
-    background: url('../_imagens/galeria-05.jpg') no-repeat;
+    background-image: url('../_imagens/galeria-05.jpg');
 }
+
 ul#album-fotos li#foto06{
-    background: url('../_imagens/galeria-06.jpg') no-repeat;
+    background-image: url('../_imagens/galeria-06.jpg');
+
 }
