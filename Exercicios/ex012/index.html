@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos localmente</h1>
+    <p>este vídeo está hospedado no meu próprio servidor</p>
+<!--handbrake app gratuíto para edição de vídeo-->
+    <video controls  width="560px" poster="imagens/tree.jpg">
+        <source src="midia/Forest.mp4" type="video/mp4"><!--desse em diante só iŕa executar se o navegador não for compatível com a versão mp4-->
+        <source src="midia/Forest.mkv" type="video/mkv">
+        <p>seu navegador nao tem compatibilidade com reprodução de video</p>
+    </video>
+
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--clicando em compartilhar no youtube, ele tem a opção incorporar-->
+
+    <h1>Inserino vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/131666950" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</body>
+</html>

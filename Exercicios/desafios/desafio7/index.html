@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Desafio imagem dinâmica</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Testando imagens dinâmicas</h1>
+    <p>aumente e diminua o tamanho do navegador para a imagem se ajustar ao tamanho da tela 😎</p>
+    <picture>
+        <source media="(min-width: 1210px)" srcset="imagens/paisagem-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-p.png" alt="imagem base">
+    </picture>
+</body>
+</html>
