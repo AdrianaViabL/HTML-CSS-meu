@@ -29,8 +29,10 @@ ul#album-fotos li span{
     text-shadow: 1px 1px 1px #000000;
     background-color: rgba(0,0,0,0.3);
     font-size: 9pt;
-    line-height: 370px;
+    line-height: 360px;
     padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
 /*para juntar todos os comandos em um lugar(de ajuste da imagem) tem que tirar o no-repeat*/
 ul#album-fotos li:hover {
@@ -64,5 +66,9 @@ ul#album-fotos li#foto05{
 
 ul#album-fotos li#foto06{
     background-image: url('../_imagens/galeria-06.jpg');
+
+}
+
+.l-margin5{
 
 }
