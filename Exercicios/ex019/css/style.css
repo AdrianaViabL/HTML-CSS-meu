@@ -18,3 +18,21 @@ h1#principal{
 h2{
     color:rgb(73, 109, 71 );
 }
+
+.basico{
+    color:#3c805e;
+
+}
+
+.intermediario{
+    color:#80793c;
+}
+
+.avancado{
+    color:#803c3c;
+}
+
+.destaque{
+    background-color: lightyellow;
+
+}

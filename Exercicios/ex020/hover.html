@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exemplo de hover</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body{
+            font-family: arial, helvetica, sans-serif;
+        }
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{/*forma de acessar uma tag dentro da outra*/
+            display: block;
+            color:white;
+            background-color: red;
+        }
+        div:hover{
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto escondido...</p>
+    </div>
+    <p>fim do parágrafo</p>
+</body>
+</html>
