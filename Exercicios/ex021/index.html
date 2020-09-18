@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modelos de Caixas</title>
+    <link rel="stylesheet" href="">
+    <style>
+    h1{
+        background-color: lightgray;
+        height: 300px;
+        width: 300px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: darkslategray;
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        /* ou
+        padding: 10px; - ja vale parqa todos os lados
+        */
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+        /* ou
+            margin: 10px;
+            margin: auto; - para centralizar o conteudo na tag
+        */
+        outline: 10px;
+        outline-style: dashed;
+        outline-color: salmon;
+        outline: 5px dashed salmon; /*forma simplificada(shorthand)*/
+    }
+    a{
+        border-width: 10px;
+        border-style: solid;/*dashed (traçado), groove (margem 3D), double (duas linhas), solid (cor sólida)*/
+        border-color: red;
+        padding: 10px;
+    }
+    img{
+        margin: center;
+        height: 300px;
+
+    }
+    </style>
+</head>
+<body>
+        <h1>Exemplo de caixa box-level</h1>
+        <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links sao exemplos de caixas inline-level.</a>Vamos ver como tudo isso funciona.</p>
+        <img src="dragon-prince.jpg" alt="jpeg">
+</body>
+</html>
