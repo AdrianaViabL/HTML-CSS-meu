@@ -33,6 +33,9 @@ body{
     background-color: var(--verdeclar);
     font-family: var(--fonte-destaque);
 }
+a.externo::after{
+    content: '\00A0\1F517';
+}
 
 header{
     background-image: linear-gradient(to top, green, var(--verdeclar));
@@ -43,7 +46,9 @@ header{
 
 header > h1{
     padding-top: 20px;
+    font-weight: normal;
 }
+
 header > h4{
     max-width: 500px;
     margin: auto;
@@ -55,11 +60,6 @@ nav{
     padding: 5px;
     box-shadow: 1px 1px 0px grey;
     font-family: var(--fonte-padrao);
-}
-
-a{
-    text-decoration: none;
-
 }
 
 nav > a{
@@ -89,24 +89,54 @@ main{
     margin: auto;
 }
 
+div{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--verdeescur);
+    padding-bottom: 45%;
+    position: relative;
+}
+
+div iframe{
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    width: 85%;
+    height: 90%;
+}
+
+main strong{
+    color: var(--verde);
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--verde);
+    background-color: var(--verdeclar);
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--verdeescur);
+}
+
 article > p{
-    padding: 15px 5px;
+    padding: 15px 10px;
 }
 
 article > h2, h3{
     font-family: var(--fonte-android);
     color: green;
     padding: 5px;
-
+    font-weight: normal;
 }
 
 article > h3{
     background-image: linear-gradient(to left, white, var(--verdeclar));
-}
-
-main > div{
-    background-color:var(--verdeclar);
-    width: 100%;
 }
 
 img{
@@ -129,19 +159,34 @@ aside > h3{
 }
 
 .pequena{
+    max-width: 350px;
     display: block;
     margin: auto;
-    max-width: 400px;
 }
 
 aside > p{
     padding: 10px;
 }
 
+ul{
+    list-style-type: '\2714\00A0'; /*imagens do emojipedia*/
+    columns: 2;
+}
+
 footer{
     margin-top: 10px;
     background-color: var(--verde);
+    padding: 6px;
     color:white;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
+}
+
+footer a{
+    color: var(--verdemed);
+
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--verdeclar);
 }
