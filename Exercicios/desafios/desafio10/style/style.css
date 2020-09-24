@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@font-face {
+            font-family: 'android';
+            src: url('../fontes/idroid.otf') format('opentype');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+:root{/*variaveis globais dentro do CSS*/
+    /*--cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor6: #063d1e; -
+    cores e nomes usados no curso em video*/
+    --verdeclar: #c5ebd6;
+    --verdemed: #83e1ad;
+    --verde:darkgreen;
+    --verdeescur: #1A5C37;
+    --fonte-padrao: arial, verdana, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'android', cursive;
+}
+
+*{
+    margin: 0px;
+
+}
+
+body{
+    background-color: var(--verdeclar);
+    font-family: var(--fonte-destaque);
+}
+
+header{
+    background-image: linear-gradient(to top, green, var(--verdeclar));
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0px grey;
+}
+
+header > h1{
+    padding-top: 20px;
+}
+header > h4{
+    max-width: 500px;
+    margin: auto;
+    font-family: var(--fonte-padrao);
+}
+
+nav{
+    text-align: left;
+    padding: 5px;
+    box-shadow: 1px 1px 0px grey;
+    font-family: var(--fonte-padrao);
+}
+
+a{
+    text-decoration: none;
+
+}
+
+nav > a{
+    color: white;
+    padding: 10px 12px 6px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: var(--verdemed);
+}
+
+p{
+    text-indent: 30px;
+    font-family: var(--fonte-padrao);
+}
+
+main{
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 0px 0px 15px 15px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+}
+
+article > p{
+    padding: 15px 5px;
+}
+
+article > h2, h3{
+    font-family: var(--fonte-android);
+    color: green;
+    padding: 5px;
+
+}
+
+article > h3{
+    background-image: linear-gradient(to left, white, var(--verdeclar));
+}
+
+main > div{
+    background-color:var(--verdeclar);
+    width: 100%;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 95%;
+}
+
+aside{
+    margin: 25px;
+    background-color: var(--verdeclar);
+    border-radius: 15px;
+    width: auto;
+}
+aside > h3{
+    border-radius: 15px 15px 0px 0px;
+    color: white;
+    background-color: var(--verdeescur);
+    padding: 5px 10px;
+}
+
+.pequena{
+    display: block;
+    margin: auto;
+    max-width: 400px;
+}
+
+aside > p{
+    padding: 10px;
+}
+
+footer{
+    margin-top: 10px;
+    background-color: var(--verde);
+    color:white;
+    font-size: 12px;
+    text-align: center;
+}

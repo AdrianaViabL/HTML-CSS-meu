@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>borda com imagem</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+        h1{
+            border: 12px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 23;
+            border-image-repeat: repeat;/*space*/
+            /*border-image: url('borda.png') 23 repeat; forma shorthand de declarar */
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>
