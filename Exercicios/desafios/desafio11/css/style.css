@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.astronauta{
+    display: inline-block;
+    max-width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,59 @@
+@charset"UTF-8";
+
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.titulo{
+    font-family: 'Passion One', cursive;
+    font-weight: normal;
+    font-size: 80px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+header > p{
+    font-family: Arial sans-serif;
+    margin: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-family: 'Sriracha', cursive;
+}
+
+section{
+    margin: 15px 0px;
+}
+section > p{
+    margin: 0px;
+    padding: 0px 15px;
+    margin: 0px 15px;
+}
+.semfundo{
+    max-width: 300px;
+
+}
+
+.comfundo{
+    background-color: rgba(1, 1, 1, 0.5);
+    color:white;
+    max-width: 300px;
+}
